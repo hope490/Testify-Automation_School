@@ -31,3 +31,14 @@ const thirdBook={
             console.log(currentBook.title + ' is not being read');
         }
     }
+
+
+
+    for (let book = 0; book < booksArray; book++) {
+        const currentBook = booksArray[book];
+        if (currentBook.reading === true) {
+            console.log(currentBook.title + ' is being read');
+        } else {
+            console.log(currentBook.title + ' is not being read');
+        }
+    }
