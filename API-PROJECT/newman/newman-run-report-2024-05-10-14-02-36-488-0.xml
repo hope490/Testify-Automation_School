@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Brevo 2" tests="73" time="34.397">
+  <testsuite name="SALES CRM / Companies / Create company / Create a company" id="68232adc-b528-4d1f-9c61-f2123c72a483" timestamp="2024-05-10T14:01:55.768Z" tests="2" failures="0" errors="0" time="0.709">
+    <testcase name="Status code is 200" time="0.709" classname="Brevo2"/>
+    <testcase name="verify ValueofId" time="0.709" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Companies / Create company / without owner ID" id="6ce88052-ae8c-471d-b635-9ea65353c20d" timestamp="2024-05-10T14:01:55.768Z" tests="4" failures="1" errors="0" time="0.403">
+    <testcase name="verify message is Invalid parameter" time="0.403" classname="Brevo2">
+      <failure type="AssertionFailure" message="expected undefined to deeply equal 'Invalid parameter'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 02b8e992-3d8f-4093-8a19-65cf531cc842.]]>
+        <![CDATA[Collection name: Brevo 2.]]>
+        <![CDATA[Request name: SALES CRM / Companies / Create company / without owner ID.]]>
+        <![CDATA[Test description: verify message is Invalid parameter.]]>
+        <![CDATA[Error message: expected undefined to deeply equal 'Invalid parameter'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to deeply equal 'Invalid parameter'
+   at Object.eval sandbox-script.js:1:2).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response status code is 200" time="0.403" classname="Brevo2"/>
+    <testcase name="Content-Type header is application/json" time="0.403" classname="Brevo2"/>
+    <testcase name="Response body has the required fields" time="0.403" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Companies / Create company / Without company name" id="3f052bfd-9c5d-4276-ba91-d7de080ed18d" timestamp="2024-05-10T14:01:55.768Z" tests="2" failures="0" errors="0" time="0.302">
+    <testcase name="validate messsage is 'Validate data: validate company name: name can not be empty' " time="0.302" classname="Brevo2"/>
+    <testcase name="Response has content type of application/json" time="0.302" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Companies / Create company / Duplicate company creation" id="fce78841-aaaa-4711-9f19-c610b48a931a" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="1" errors="0" time="0.388">
+    <testcase name="message to be:'company already exist' " time="0.388" classname="Brevo2">
+      <failure type="AssertionFailure" message="pm.expects is not a function">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 02b8e992-3d8f-4093-8a19-65cf531cc842.]]>
+        <![CDATA[Collection name: Brevo 2.]]>
+        <![CDATA[Request name: SALES CRM / Companies / Create company / Duplicate company creation.]]>
+        <![CDATA[Test description: message to be:'company already exist' .]]>
+        <![CDATA[Error message: pm.expects is not a function.]]>
+        <![CDATA[Stacktrace: TypeError: pm.expects is not a function
+   at Object.eval sandbox-script.js:1:4).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="SALES CRM / Companies / Create company / Without Domain" id="4d252ab2-dff1-4ecf-9fbd-52cb03a582b1" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="1" errors="0" time="0.369">
+    <testcase name="message to be: Domain 'Missing parameter'" time="0.369" classname="Brevo2">
+      <failure type="AssertionFailure" message="expected undefined to deeply equal 'Missing parameter'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 02b8e992-3d8f-4093-8a19-65cf531cc842.]]>
+        <![CDATA[Collection name: Brevo 2.]]>
+        <![CDATA[Request name: SALES CRM / Companies / Create company / Without Domain.]]>
+        <![CDATA[Test description: message to be: Domain 'Missing parameter'.]]>
+        <![CDATA[Error message: expected undefined to deeply equal 'Missing parameter'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to deeply equal 'Missing parameter'
+   at Object.eval sandbox-script.js:1:5).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="SALES CRM / Companies / Deals / Create a deal" id="658ac2b3-79a6-46fe-a696-53b573fcedca" timestamp="2024-05-10T14:01:55.768Z" tests="2" failures="0" errors="0" time="0.694">
+    <testcase name="Status code is 200" time="0.694" classname="Brevo2"/>
+    <testcase name="verify that response contains an id" time="0.694" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Companies / Deals / without deal owner" id="575e6bd9-9c00-4520-8f80-920dcd6cd0b7" timestamp="2024-05-10T14:01:55.768Z" tests="2" failures="0" errors="0" time="0.418">
+    <testcase name="Status code is 200" time="0.418" classname="Brevo2"/>
+    <testcase name="verify that id is not empty and null" time="0.418" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Companies / Deals / Without deal name" id="26e2fef4-8724-46c1-9d11-3bd19d5d3d4f" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.537">
+    <testcase name="verify that message is: 'Not valid data. : Deal name cannot be empty' " time="0.537" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Companies / Deals / Invalid amount" id="2b47371c-353d-4735-a31b-eab13ebf9a7a" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="1" errors="0" time="0.581">
+    <testcase name="verify that message is: Deal owner can not be empty" time="0.581" classname="Brevo2">
+      <failure type="AssertionFailure" message="expected undefined to deeply equal 'Deal owner can not be empty'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 02b8e992-3d8f-4093-8a19-65cf531cc842.]]>
+        <![CDATA[Collection name: Brevo 2.]]>
+        <![CDATA[Request name: SALES CRM / Companies / Deals / Invalid amount.]]>
+        <![CDATA[Test description: verify that message is: Deal owner can not be empty.]]>
+        <![CDATA[Error message: expected undefined to deeply equal 'Deal owner can not be empty'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to deeply equal 'Deal owner can not be empty'
+   at Object.eval sandbox-script.js:1:9).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="SALES CRM / Companies / Deals / Get all deals" id="e1302d7f-0c75-4788-b50b-975ee0ae1062" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.473">
+    <testcase name="Value of the item is an array" time="0.473" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Companies / Deals / Link and Unlink a deal with contacts and companies" id="b76afb97-5ed5-4591-a3e1-3479e8bba9f7" timestamp="2024-05-10T14:01:55.768Z" tests="0" failures="0" errors="0" time="0.258"/>
+  <testsuite name="SALES CRM / Companies / Deals / Get deal attributes" id="013e9957-bb1d-4284-95a6-8582ac2db1b4" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.557">
+    <testcase name="verify the responseData contains the required field" time="0.557" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Companies / Deals / Get a deal" id="9e6ccec4-1025-48c1-9533-7ca199f9b132" timestamp="2024-05-10T14:01:55.768Z" tests="2" failures="2" errors="0" time="0.335">
+    <testcase name="Status code is 200" time="0.335" classname="Brevo2">
+      <failure type="AssertionFailure" message="expected response to have status code 200 but got 400">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 02b8e992-3d8f-4093-8a19-65cf531cc842.]]>
+        <![CDATA[Collection name: Brevo 2.]]>
+        <![CDATA[Request name: SALES CRM / Companies / Deals / Get a deal.]]>
+        <![CDATA[Test description: Status code is 200.]]>
+        <![CDATA[Error message: expected response to have status code 200 but got 400.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 200 but got 400
+   at Object.eval sandbox-script.js:1:13).]]>
+      </failure>
+    </testcase>
+    <testcase name="Check if the response contains the required properties" time="0.335" classname="Brevo2">
+      <failure type="AssertionFailure" message="expected { Object (message) } to have property 'id'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 02b8e992-3d8f-4093-8a19-65cf531cc842.]]>
+        <![CDATA[Collection name: Brevo 2.]]>
+        <![CDATA[Request name: SALES CRM / Companies / Deals / Get a deal.]]>
+        <![CDATA[Test description: Check if the response contains the required properties.]]>
+        <![CDATA[Error message: expected { Object (message) } to have property 'id'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected { Object (message) } to have property 'id'
+   at Object.eval sandbox-script.js:2:13).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="SALES CRM / Companies / Deals / Update a deal" id="84070189-797a-4f82-915b-6236fb3f1feb" timestamp="2024-05-10T14:01:55.768Z" tests="0" failures="0" errors="0" time="0.543"/>
+  <testsuite name="SALES CRM / Companies / Deals / Delete a deal" id="036aafdd-38fd-4f0a-8914-9649e6ec1c1c" timestamp="2024-05-10T14:01:55.768Z" tests="0" failures="0" errors="0" time="0.369"/>
+  <testsuite name="SALES CRM / Companies / Get a company" id="ffa6d844-76cf-4f6c-84e7-488ea758a47a" timestamp="2024-05-10T14:01:55.768Z" tests="2" failures="0" errors="0" time="0.554">
+    <testcase name="verify the value of id" time="0.554" classname="Brevo2"/>
+    <testcase name="verify that owner exist and is not null" time="0.554" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Companies / Get all Companies" id="4967c854-207d-4616-b349-b69a02a4cfbf" timestamp="2024-05-10T14:01:55.768Z" tests="4" failures="0" errors="0" time="0.532">
+    <testcase name="Response status code is 200" time="0.532" classname="Brevo2"/>
+    <testcase name="Pager object contains the expected keys and values" time="0.532" classname="Brevo2"/>
+    <testcase name="verify that item is not null and empty " time="0.532" classname="Brevo2"/>
+    <testcase name="verify that the value of items is an array" time="0.532" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Companies / Get company attributes" id="84a4b8d3-0ac7-409f-99bf-76386563aa8a" timestamp="2024-05-10T14:01:55.768Z" tests="2" failures="0" errors="0" time="0.476">
+    <testcase name="Response status code is 200" time="0.476" classname="Brevo2"/>
+    <testcase name="Check if the response has the required fields" time="0.476" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Companies / Update a company" id="f0eff60b-4d20-4bb5-9cf1-42a1dda66600" timestamp="2024-05-10T14:01:55.768Z" tests="0" failures="0" errors="0" time="0.330"/>
+  <testsuite name="SALES CRM / Companies / Delete a company" id="12dd13c4-af81-4688-80d2-f2d16e6bfb3d" timestamp="2024-05-10T14:01:55.768Z" tests="0" failures="0" errors="0" time="0.347"/>
+  <testsuite name="SALES CRM / Companies / Get pipeline stages" id="0f553d3d-9bbc-48ff-b002-e1fd7636e269" timestamp="2024-05-10T14:01:55.768Z" tests="0" failures="0" errors="0" time="0.275"/>
+  <testsuite name="SALES CRM / Tasks / create task / Create a task" id="ccd8c335-e806-41ab-b57b-7d8e20a1b901" timestamp="2024-05-10T14:01:55.768Z" tests="2" failures="0" errors="0" time="0.890">
+    <testcase name="Successful POST request" time="0.890" classname="Brevo2"/>
+    <testcase name="Status code is 201" time="0.890" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Tasks / create task / missing task id" id="74bd96ec-4a67-4095-a794-691eebf98d1d" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.442">
+    <testcase name="verify that the missing TaskTypeId returns an error message" time="0.442" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Tasks / create task / missing assignedTo" id="746f223d-bbf2-40aa-b01d-d177387a14ae" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.471">
+    <testcase name="Verify the error message for missing AssignToId" time="0.471" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Tasks / create task / Invalid AssignedTo" id="ad337f16-0da4-43b0-bc9c-1b9f0fa6ed92" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.588">
+    <testcase name="Verify the error message for missing AssignToId" time="0.588" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Tasks / create task / Missing date" id="15a1390e-1eeb-49aa-bf3a-6ca19af87228" timestamp="2024-05-10T14:01:55.768Z" tests="2" failures="0" errors="0" time="0.449">
+    <testcase name="verify that the missing Date returns an error message" time="0.449" classname="Brevo2"/>
+    <testcase name="verify that data is an array" time="0.449" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Tasks / create task / missing name" id="f01c7ac8-0cbf-4ad1-8212-51b4ef27e184" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.487">
+    <testcase name="verify that the missing name returns an error message" time="0.487" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Tasks / Get all tasks / Get all tasks" id="39e4b9fd-fac8-443a-bada-afca78519bf0" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.571">
+    <testcase name="Verify the response structure" time="0.571" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Tasks / Get all tasks / Invalid contact parameter" id="5020ef8b-dfc5-4acc-a555-a8d3a7f91cd5" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.497">
+    <testcase name="Verify response when providing invalid number in filter contacts parameter" time="0.497" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Tasks / Get all tasks / Invalid task Type" id="246859dd-ec91-41bf-b59c-6694322ef89d" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.411">
+    <testcase name="Verify the error message for missing task type id" time="0.411" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Tasks / Get all task types" id="c24535d5-1170-43d9-bb92-dfe9dad8e9b0" timestamp="2024-05-10T14:01:55.768Z" tests="0" failures="0" errors="0" time="0.438"/>
+  <testsuite name="SALES CRM / Tasks / Get a task" id="f3a5934a-3392-4e33-a1bf-14187b99d4f4" timestamp="2024-05-10T14:01:55.768Z" tests="2" failures="0" errors="0" time="0.623">
+    <testcase name="Status code is 200" time="0.623" classname="Brevo2"/>
+    <testcase name="Verify task object properties" time="0.623" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Tasks / Update a task" id="827c05a6-e851-4cb9-9737-5e33c12039c5" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.848">
+    <testcase name="Status code is 204" time="0.848" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Tasks / Delete a task" id="837a6955-eafd-46c1-a9b1-cf79ec9149b1" timestamp="2024-05-10T14:01:55.768Z" tests="0" failures="0" errors="0" time="0.520"/>
+  <testsuite name="SALES CRM / Notes / Create a note" id="e6b29692-bb73-4611-bf97-302e2c3a5842" timestamp="2024-05-10T14:01:55.768Z" tests="3" failures="0" errors="0" time="0.562">
+    <testcase name="Status code is 201" time="0.562" classname="Brevo2"/>
+    <testcase name="verify that authorId exist and is not empty" time="0.562" classname="Brevo2"/>
+    <testcase name="Verify authorId matches valueOfId" time="0.562" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Notes / Get all notes" id="90edfb24-9ed4-42c3-9a4c-a88f9ce0353a" timestamp="2024-05-10T14:01:55.768Z" tests="2" failures="0" errors="0" time="0.327">
+    <testcase name="Status code is 200" time="0.327" classname="Brevo2"/>
+    <testcase name="Verify entityIds matches valueOfId" time="0.327" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Notes / Get a note" id="01a3449a-965b-4548-bcf4-71027c1dd099" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.345">
+    <testcase name="Status code is 200" time="0.345" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Notes / Update a note" id="94909935-8f2d-45ca-8e65-07d1989fcd2c" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.590">
+    <testcase name="Status code is 200" time="0.590" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="SALES CRM / Notes / Delete a note" id="108d9b5a-3c4e-4ea4-aca5-54b119a17736" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.689">
+    <testcase name="Status code is 400" time="0.689" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Account setting / Account data / Get your account information, plan and credits details" id="e11fd101-df8e-4489-bff0-d4da3586cab2" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.430">
+    <testcase name="Verify organization data" time="0.430" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Account setting / Senders / Create a new sender" id="eb2e0f0b-7438-4fdb-9664-3490a3671805" timestamp="2024-05-10T14:01:55.768Z" tests="2" failures="0" errors="0" time="1.106">
+    <testcase name="Status code is 201" time="1.106" classname="Brevo2"/>
+    <testcase name="Verify that the response has the required properties" time="1.106" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Account setting / Senders / Get all the dedicated IPs for a sender" id="55a54c5e-86c5-4516-9788-ab20826d9435" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="1" errors="0" time="0.606">
+    <testcase name="Verify that the 'ips' array is not empty" time="0.606" classname="Brevo2">
+      <failure type="AssertionFailure" message="expected [] not to be empty">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 02b8e992-3d8f-4093-8a19-65cf531cc842.]]>
+        <![CDATA[Collection name: Brevo 2.]]>
+        <![CDATA[Request name: Account setting / Senders / Get all the dedicated IPs for a sender.]]>
+        <![CDATA[Test description: Verify that the 'ips' array is not empty.]]>
+        <![CDATA[Error message: expected [] not to be empty.]]>
+        <![CDATA[Stacktrace: AssertionError: expected [] not to be empty
+   at Object.eval sandbox-script.js:1:42).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Account setting / Senders / Get the list of all your senders" id="4566b33a-b7bb-4da5-b52d-51921e7fc760" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="1" errors="0" time="0.366">
+    <testcase name="Verify that the 'senders' array is not empty" time="0.366" classname="Brevo2">
+      <failure type="AssertionFailure" message="expected undefined to be an array">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 02b8e992-3d8f-4093-8a19-65cf531cc842.]]>
+        <![CDATA[Collection name: Brevo 2.]]>
+        <![CDATA[Request name: Account setting / Senders / Get the list of all your senders.]]>
+        <![CDATA[Test description: Verify that the 'senders' array is not empty.]]>
+        <![CDATA[Error message: expected undefined to be an array.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be an array
+   at Object.eval sandbox-script.js:1:43).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Account setting / Senders / Duplicate request" id="e4803520-dced-427e-bb64-c49864b7186c" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.635">
+    <testcase name="Verify the error code and message" time="0.635" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Account setting / Senders / Update a sender" id="071bf11f-5455-4065-a6e6-9abf0ccdf10c" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.847">
+    <testcase name="Status code is 204" time="0.847" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Account setting / Senders / Delete a sender" id="fb31be5d-0fe2-40ba-ab61-f9c14cd9213f" timestamp="2024-05-10T14:01:55.768Z" tests="0" failures="0" errors="0" time="0.405"/>
+  <testsuite name="Account setting / Domains / Create a new domain" id="a9beac89-f4df-4fab-933f-936726be60e0" timestamp="2024-05-10T14:01:55.768Z" tests="0" failures="0" errors="0" time="1.435"/>
+  <testsuite name="Account setting / Domains / Get the list of all your domains" id="5d8e398b-96f2-450d-bfaa-1626391b3837" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.422">
+    <testcase name="Verify that Domains  is an array is not empty" time="0.422" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Account setting / Domains / Validate domain configuration" id="3df1d6f2-ea49-4ea8-a848-64ad85518764" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="1" errors="0" time="0.351">
+    <testcase name="Status code is 200" time="0.351" classname="Brevo2">
+      <failure type="AssertionFailure" message="expected response to have status code 200 but got 404">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 02b8e992-3d8f-4093-8a19-65cf531cc842.]]>
+        <![CDATA[Collection name: Brevo 2.]]>
+        <![CDATA[Request name: Account setting / Domains / Validate domain configuration.]]>
+        <![CDATA[Test description: Status code is 200.]]>
+        <![CDATA[Error message: expected response to have status code 200 but got 404.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 200 but got 404
+   at Object.eval sandbox-script.js:1:49).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Account setting / Domains / Authenticate a domain" id="4501582a-b448-4734-8e8f-3eb6f98cc784" timestamp="2024-05-10T14:01:55.768Z" tests="0" failures="0" errors="0" time="0.478"/>
+  <testsuite name="Account setting / Domains / Delete a domain" id="e0286f1c-4526-4170-8129-8b450090d2e0" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.399">
+    <testcase name="Status code is 200" time="0.399" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Create SMS Campaign / Creates an SMS campaign Copy" id="cac47c9d-ba49-40a6-96f4-e8eafaa408d9" timestamp="2024-05-10T14:01:55.768Z" tests="0" failures="0" errors="0" time="0.336"/>
+  <testsuite name="Marketing / SMS Campaigns / Create SMS Campaign / missing list" id="59e62428-5016-4b72-af91-a431e16baec2" timestamp="2024-05-10T14:01:55.768Z" tests="0" failures="0" errors="0" time="0.322"/>
+  <testsuite name="Marketing / SMS Campaigns / Create SMS Campaign / missing content" id="163241c9-5034-4b7f-998a-50c60b056b2f" timestamp="2024-05-10T14:01:55.768Z" tests="0" failures="0" errors="0" time="0.276"/>
+  <testsuite name="Marketing / SMS Campaigns / Create SMS Campaign / Missing sender" id="5d14d9a7-6e0a-4e0f-81ac-a8e4ed9b4d54" timestamp="2024-05-10T14:01:55.768Z" tests="0" failures="0" errors="0" time="0.323"/>
+  <testsuite name="Marketing / SMS Campaigns / Campaign Information / Returns the information for all your created SMS campaigns Copy" id="ac727f12-16ee-4067-904c-a65ec3739b65" timestamp="2024-05-10T14:01:55.768Z" tests="4" failures="0" errors="0" time="0.347">
+    <testcase name="verify that count is not null " time="0.347" classname="Brevo2"/>
+    <testcase name="verify that campaigns is not null " time="0.347" classname="Brevo2"/>
+    <testcase name="Verify that ValueCount is equal to the length of campaigns" time="0.347" classname="Brevo2"/>
+    <testcase name="verify that scheduledAt is a string" time="0.347" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Campaign Information / Status" id="96cf84e1-af38-4f7a-b70a-4dc6251c48f1" timestamp="2024-05-10T14:01:55.768Z" tests="3" failures="0" errors="0" time="0.331">
+    <testcase name="verify campaigns is an array" time="0.331" classname="Brevo2"/>
+    <testcase name="verify campaigns contains an object" time="0.331" classname="Brevo2"/>
+    <testcase name="validate status is either 'suspended' or 'queued' " time="0.331" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Send SMS Campaign / Send an SMS campaign's report" id="afd582a3-d6b0-432d-ba1c-5a4a61d7ebb5" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.442">
+    <testcase name="Status code is 200" time="0.442" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Send SMS Campaign / Invalid Language" id="7f67b0e5-6e12-49d4-ab5a-77dd399bf319" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.277">
+    <testcase name="Verify invalid parameter error message" time="0.277" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Send SMS Campaign / Missing language" id="c169c0ba-e296-4080-941d-cf98447232ec" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.302">
+    <testcase name="Verify invalid parameter error message" time="0.302" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Send SMS Campaign / Missing Email" id="ce28f373-6e8a-4ea3-b2e6-227b27b67e44" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.296">
+    <testcase name="Verify invalid parameter error message" time="0.296" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Send SMS Campaign / Invalid email address" id="724d3f9e-e764-4a35-9ae2-208e911c5549" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.319">
+    <testcase name="Verify invalid parameter error message" time="0.319" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / update campaign info / Update an SMS campaign" id="bb474550-f981-46e1-a505-c6d1e2bc9641" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.416">
+    <testcase name="Response status code is 204" time="0.416" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / update campaign info / Invalid parameter" id="ab20258c-a42f-4586-9d01-a67682a1e47a" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.301">
+    <testcase name="Verify campaigns parameter message is invalid" time="0.301" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Get an SMS campaign" id="ea679779-8b16-45be-958d-e9506a676abb" timestamp="2024-05-10T14:01:55.768Z" tests="2" failures="0" errors="0" time="0.323">
+    <testcase name="verify status is 200 Ok" time="0.323" classname="Brevo2"/>
+    <testcase name="verify that status is either suspended or queued" time="0.323" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Delete scheduled campaign" id="c81caaaa-a17a-470c-897b-f71a1862479c" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.284">
+    <testcase name="verify message is 'Campaign once scheduled can not be deleted'" time="0.284" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Contact Management / Folders / Create a folder" id="5f4c3462-05c2-4ec1-a0b8-e888e409c6e0" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.399">
+    <testcase name="Status code is 201" time="0.399" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Contact Management / Folders / Missing parameter" id="543cc03d-b549-441f-9612-094afa8c8e6d" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.288">
+    <testcase name="Verify missing parameter error message" time="0.288" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Contact Management / Folders / Get all folders" id="d6b25c07-14bd-4082-923f-e7fd7928c2c6" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.370">
+    <testcase name="Verify response contains folders" time="0.370" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Contact Management / Folders / Returns a folder's details" id="a9613533-21b0-4b97-b852-88e9d73febec" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.492">
+    <testcase name="Verify response has the correct properties" time="0.492" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Contact Management / Folders / Get lists in a folder" id="9990c376-b929-433a-9aac-7654ddb73a90" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.386">
+    <testcase name="Status code is 200" time="0.386" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Contact Management / Folders / Update a folder" id="b3a4218c-cf1a-4676-b8b4-29d5f319637d" timestamp="2024-05-10T14:01:55.768Z" tests="1" failures="0" errors="0" time="0.521">
+    <testcase name="Status code is 204" time="0.521" classname="Brevo2"/>
+  </testsuite>
+  <testsuite name="Contact Management / Folders / Delete a folder (and all its lists)" id="207c37a0-a782-4a01-add1-ed5aba9643fa" timestamp="2024-05-10T14:01:55.768Z" tests="0" failures="0" errors="0" time="0.368"/>
+</testsuites>
